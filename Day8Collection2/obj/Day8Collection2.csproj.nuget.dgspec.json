@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CAPGEM\\DemoApp\\DemoApp.csproj": {}
+    "D:\\CAPGEM\\Day8Collection2\\Day8Collection2.csproj": {}
   },
   "projects": {
-    "D:\\CAPGEM\\DemoApp\\DemoApp.csproj": {
+    "D:\\CAPGEM\\Day8Collection2\\Day8Collection2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CAPGEM\\DemoApp\\DemoApp.csproj",
-        "projectName": "DemoApp",
-        "projectPath": "D:\\CAPGEM\\DemoApp\\DemoApp.csproj",
+        "projectUniqueName": "D:\\CAPGEM\\Day8Collection2\\Day8Collection2.csproj",
+        "projectName": "Day8Collection2",
+        "projectPath": "D:\\CAPGEM\\Day8Collection2\\Day8Collection2.csproj",
         "packagesPath": "C:\\Users\\M S I\\.nuget\\packages\\",
-        "outputPath": "D:\\CAPGEM\\DemoApp\\obj\\",
+        "outputPath": "D:\\CAPGEM\\Day8Collection2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

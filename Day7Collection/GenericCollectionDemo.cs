@@ -18,31 +18,43 @@ namespace Day7Assignment
             Product p1 = new Product();
 
             Console.Write("Enter Product ID :");
-            p1.ProdID = Int32.Parse(Console.ReadLine());
+            p1.ProdID = Int32.Parse(Console.ReadLine()!);
 
             Console.Write("Enter Product Name:");
-            p1.Name = Console.ReadLine();
+            p1.Name = Console.ReadLine()!;
 
             Console.Write("Enter Product Price :");
-            p1.Price = Int32.Parse(Console.ReadLine());
+            p1.Price = Int32.Parse(Console.ReadLine()!);
 
             prodList.Add(p1);
 
+            System.Console.WriteLine("ITEM ADDED - NEW LIST");
+            foreach (var item in prodList)
+            {
+                System.Console.WriteLine($"Item ID : {item.ProdID}\nItem Name : {item.Name}\nItem Price: {item.Price}");
+            }
+
             Console.Write("Enter Product ID to Update:");
-            int id = Int32.Parse(Console.ReadLine());
+            int id = Int32.Parse(Console.ReadLine()!);
 
             Product prodFound = prodList.Find(p => p.ProdID == id);
             if (prodFound != null)
             {
                 Console.Write("Enter New  Product Name :");
-                prodFound.Name = Console.ReadLine();
+                prodFound.Name = Console.ReadLine()!;
 
                 Console.Write("Enter New  Product Price :");
-                prodFound.Price = Int32.Parse(Console.ReadLine());
+                prodFound.Price = Int32.Parse(Console.ReadLine()!);
+            }
+             System.Console.WriteLine("ITEM UPDATED - NEW LIST");
+            foreach (var item in prodList)
+            {
+                System.Console.WriteLine($"Item ID : {item.ProdID}\nItem Name : {item.Name}\nItem Price: {item.Price}");
             }
 
             Console.Write("Enter Product ID for Search:");
-            int pid = Convert.ToInt32(Console.ReadLine());
+            int pid = Convert.ToInt32(Console.ReadLine()!);
+            
 
             Product p = prodList.Find(c => c.ProdID == pid);
             if (p != null)
@@ -51,12 +63,17 @@ namespace Day7Assignment
             }
 
             Console.Write("Enter Product ID for Delete:");
-            int pid1 = Int32.Parse(Console.ReadLine());
+            int pid1 = Int32.Parse(Console.ReadLine()!);
 
             Product pO1 = prodList.Find(c => c.ProdID == pid1);
             if (pO1 != null)
             {
                 prodList.Remove(pO1);
+            }
+            System.Console.WriteLine("ITEM DELETED - NEW LIST");
+            foreach (var item in prodList)
+            {
+                System.Console.WriteLine($"Item ID : {item.ProdID}\nItem Name : {item.Name}\nItem Price: {item.Price}");
             }
         }
     }
